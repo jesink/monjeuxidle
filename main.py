@@ -18,7 +18,17 @@ background_image = pygame.image.load(os.path.join("assets", "background.png")).c
 character = Character(screen)  # Créez l'objet Character
 inventory = Inventory(screen, character)  # Passez l'objet Character en argument
 enemy_group_interface = EnemyGroupInterface(screen, character)
-
+running = True
+while running:
+    # Gestion des événements
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            mouse_pos = pygame.mouse.get_pos()
+            if inventory.handle_click(mouse_pos, event.button) == "retour":
+                # Gérer le retour à l'écran précédent
+                pass
 # Variables de contrôle
 running = True
 current_interface = "home"
