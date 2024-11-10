@@ -1,0 +1,1 @@
+{"character": {"type": "Warrior", "name": "Warrior", "health": 38, "max_health": 160, "exp": 325, "max_exp": 337, "level": 4, "attack": 25, "defense": 14}, "inventory": [null, {"name": "Bijou de Warrior", "type": "Bijou", "stats": {"health": 14}}], "equipment_slots": {"Arme": null, "Armure": null, "Bijou": null}}
